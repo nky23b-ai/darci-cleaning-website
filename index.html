@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AD's Cleaning Service | South Jersey's Trusted Cleaners</title>
+    <title>ADscleaningservice.com | South Jersey's Trusted Cleaners</title>
     <meta name="description" content="Professional, meticulous cleaning services tailored to your space in South Jersey. Let AD's Cleaning Service handle the mess.">
     
     <!-- Fonts: Lora (Serif) for headings, DM Sans (Sans-serif) for body -->
@@ -200,7 +200,7 @@
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <!-- Logo -->
             <a href="#" class="font-serif text-2xl font-medium tracking-tight z-50 relative text-white transition-colors duration-300" id="nav-logo">
-                AD's Cleaning Service
+                ADscleaningservice.com
             </a>
 
             <!-- Desktop Menu -->
@@ -310,16 +310,16 @@
     <section id="about" class="py-24 md:py-32 bg-brand-white">
         <div class="max-w-7xl mx-auto px-6 md:px-12">
             <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
-    <div class="w-full lg:w-1/2 order-2 lg:order-1">
-    <div class="relative flex flex-col gap-4">
-        <div class="overflow-hidden rounded-sm aspect-[4/3]">
-            <img src="./IMG_1804.jpeg" alt="AD's Cleaning Services supplies" class="w-full h-full object-cover reveal-img">
-        </div>
-        <div class="overflow-hidden rounded-sm aspect-[4/3]">
-            <img src="./IMG_1799.jpeg" alt="AD's Cleaning Services van" class="w-full h-full object-cover reveal-img">
-        </div>
-    </div>
-</div>
+                <div class="w-full lg:w-1/2 order-2 lg:order-1">
+                    <div class="flex flex-col gap-4">
+                        <div class="relative aspect-[4/3] overflow-hidden rounded-sm">
+                            <img src="https://memory.tanka.ai/H3zKXXVM8_vvrASNtgzK1" alt="AD's Cleaning Service supplies and logo" class="w-full h-full object-cover">
+                        </div>
+                        <div class="relative aspect-[16/7] overflow-hidden rounded-sm">
+                            <img src="https://memory.tanka.ai/ZnirJ08IKB_8ajOqRJauW" alt="AD's Cleaning Service branded vehicle" class="w-full h-full object-cover object-center">
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="w-full lg:w-1/2 order-1 lg:order-2">
                     <div class="inline-flex items-center space-x-2 mb-6 fade-up">
@@ -577,41 +577,58 @@
 
                 <!-- Form -->
                 <div class="w-full lg:w-7/12 fade-up delay-100">
-                <form name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="bg-brand-white border border-brand-sand p-8 md:p-12 rounded-sm shadow-sm" id="quote-form">
-  <input type="hidden" name="form-name" value="quote-request">
-  <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+                    <!-- 
+                        NETLIFY FORMS — works automatically when deployed to Netlify.
+                        No setup needed. Netlify detects the data-netlify="true" attribute
+                        and routes all submissions to darcipadilla@gmail.com.
+                        To enable email notifications:
+                          Netlify Dashboard → Forms → quote-request → Form notifications → Add email
+                    -->
+                    <form 
+                        name="quote-request"
+                        method="POST"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        action="/thank-you"
+                        id="quote-form"
+                        class="bg-brand-white border border-brand-sand p-8 md:p-12 rounded-sm shadow-sm"
+                    >
+                        <!-- Netlify hidden fields -->
+                        <input type="hidden" name="form-name" value="quote-request">
+                        <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label for="firstName" class="block text-xs font-semibold uppercase tracking-wider text-brand-navy/70 mb-2">First Name</label>
-                                <input type="text" id="firstName" class="w-full bg-transparent border-b border-brand-sand py-3 focus:outline-none focus:border-brand-teal transition-colors text-brand-navy placeholder-brand-navy/30" placeholder="Jane" required>
+                                <input type="text" id="firstName" name="first_name" class="w-full bg-transparent border-b border-brand-sand py-3 focus:outline-none focus:border-brand-teal transition-colors text-brand-navy placeholder-brand-navy/30" placeholder="Jane" required>
                             </div>
                             <div>
                                 <label for="lastName" class="block text-xs font-semibold uppercase tracking-wider text-brand-navy/70 mb-2">Last Name</label>
-                                <input type="text" id="lastName" class="w-full bg-transparent border-b border-brand-sand py-3 focus:outline-none focus:border-brand-teal transition-colors text-brand-navy placeholder-brand-navy/30" placeholder="Doe" required>
+                                <input type="text" id="lastName" name="last_name" class="w-full bg-transparent border-b border-brand-sand py-3 focus:outline-none focus:border-brand-teal transition-colors text-brand-navy placeholder-brand-navy/30" placeholder="Doe" required>
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-brand-navy/70 mb-2">Email Address</label>
-                                <input type="email" id="email" class="w-full bg-transparent border-b border-brand-sand py-3 focus:outline-none focus:border-brand-teal transition-colors text-brand-navy placeholder-brand-navy/30" placeholder="jane@example.com" required>
+                                <input type="email" id="email" name="email" class="w-full bg-transparent border-b border-brand-sand py-3 focus:outline-none focus:border-brand-teal transition-colors text-brand-navy placeholder-brand-navy/30" placeholder="jane@example.com" required>
                             </div>
                             <div>
                                 <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-brand-navy/70 mb-2">Phone Number</label>
-                                <input type="tel" id="phone" class="w-full bg-transparent border-b border-brand-sand py-3 focus:outline-none focus:border-brand-teal transition-colors text-brand-navy placeholder-brand-navy/30" placeholder="(555) 123-4567">
+                                <input type="tel" id="phone" name="phone" class="w-full bg-transparent border-b border-brand-sand py-3 focus:outline-none focus:border-brand-teal transition-colors text-brand-navy placeholder-brand-navy/30" placeholder="(555) 123-4567">
                             </div>
                         </div>
 
                         <div class="mb-6">
                             <label for="service" class="block text-xs font-semibold uppercase tracking-wider text-brand-navy/70 mb-2">Service Needed</label>
                             <div class="relative">
-                                <select id="service" class="w-full bg-transparent border-b border-brand-sand py-3 focus:outline-none focus:border-brand-teal transition-colors text-brand-navy appearance-none cursor-pointer" required>
+                                <select id="service" name="service" class="w-full bg-transparent border-b border-brand-sand py-3 focus:outline-none focus:border-brand-teal transition-colors text-brand-navy appearance-none cursor-pointer" required>
                                     <option value="" disabled selected>Select a service...</option>
-                                    <option value="standard">Standard Cleaning</option>
-                                    <option value="deep">Deep Cleaning</option>
-                                    <option value="move">Move-In / Move-Out</option>
-                                    <option value="office">Office / Commercial</option>
-                                    <option value="other">Other</option>
+                                    <option value="Standard Cleaning">Standard Cleaning</option>
+                                    <option value="Deep Cleaning">Deep Cleaning</option>
+                                    <option value="Move-In / Move-Out">Move-In / Move-Out</option>
+                                    <option value="Office / Commercial">Office / Commercial</option>
+                                    <option value="Other">Other</option>
                                 </select>
                                 <i data-lucide="chevron-down" class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-brand-navy/50 pointer-events-none"></i>
                             </div>
@@ -619,12 +636,18 @@
 
                         <div class="mb-10">
                             <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-brand-navy/70 mb-2">Additional Details</label>
-                            <textarea id="message" rows="4" class="w-full bg-transparent border-b border-brand-sand py-3 focus:outline-none focus:border-brand-teal transition-colors text-brand-navy placeholder-brand-navy/30 resize-none" placeholder="Tell us about your space (sq ft, number of rooms, specific focus areas)..."></textarea>
+                            <textarea id="message" name="message" rows="4" class="w-full bg-transparent border-b border-brand-sand py-3 focus:outline-none focus:border-brand-teal transition-colors text-brand-navy placeholder-brand-navy/30 resize-none" placeholder="Tell us about your space (sq ft, number of rooms, specific focus areas)..."></textarea>
                         </div>
 
                         <button type="submit" class="btn-primary w-full py-4 text-sm font-medium tracking-wide rounded-sm">
                             Request Free Quote
                         </button>
+
+                        <!-- Success message (shown via JS after submit) -->
+                        <div id="form-success" class="hidden mt-6 p-4 bg-brand-teal/10 border border-brand-teal/30 rounded-sm text-center">
+                            <p class="font-serif text-brand-teal text-lg mb-1">Thank you!</p>
+                            <p class="text-sm text-brand-navy/70">Your request has been sent. Darci will be in touch within 24 hours.</p>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -637,7 +660,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                 <div class="md:col-span-2">
                     <a href="#" class="font-serif text-3xl font-medium tracking-tight text-brand-white mb-6 block">
-                        AD's Cleaning
+                        ADscleaningservice.com
                     </a>
                     <p class="font-serif italic text-brand-white/60 max-w-sm leading-relaxed mb-3 text-lg">
                         "Keeping your place sparkling."
@@ -717,6 +740,19 @@
                 mobileMenuBtn.classList.remove('text-brand-navy');
             }
         });
+
+        // Netlify Forms success — show thank-you if redirected back to /?success=true
+        // (Set action="/thank-you" on the form, or use action="/?success=true" for inline)
+        if (window.location.pathname === '/thank-you' || window.location.search.includes('success=true')) {
+            const successMsg = document.getElementById('form-success');
+            const form = document.getElementById('quote-form');
+            if (successMsg && form) {
+                form.style.display = 'none';
+                successMsg.classList.remove('hidden');
+                const contactSection = document.getElementById('contact');
+                if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
 
         // Mobile Menu Toggle
         const mobileMenu = document.getElementById('mobile-menu');
